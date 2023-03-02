@@ -1,19 +1,15 @@
 // Imports small array of users
+module.import { data} from "data.js";
+const { data } = require("browserslist");
 // Pretend it's an API request
-const users = require('./data');
+const users = require("./data");
 
 // Fetches all users
-const getUsers = () => {
-    return users;
-}
-
-// Filters users by specific ID
-const getUser = id => {
-    return users.find(user => user.id === id)
-}
-
+const getUsers = (id) => {
+  return id;
+};
 
 // test
 // console.log(getUser(3));
 
-module.exports = {getUsers , getUser};
+module.exports = { getUsers, getUser };
